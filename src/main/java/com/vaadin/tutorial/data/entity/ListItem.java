@@ -15,10 +15,13 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ListItem extends AbstractEntity {
+
   @Min(1)
   private int quantity;
+
   @NotBlank
   private String name;
+
   @ManyToOne
   @NotNull
   private Category category;
